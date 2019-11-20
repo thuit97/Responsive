@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive eCommerce Website Template</title>
+    <meta name="author" content="Thu Nguyen">
+    <meta name="description" content="Responsive eCommerce Website Tutorial using HTML5 and CSS3 Only">
+    <!--  To ensure proper rendering and touch zooming in Mobile Phones -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minium-scale=1">
+    <!-- Icon in the browser's tab -->
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Font -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <!-- External CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body id="myPage">
+    <!-- Top Background-Image wrapper -->
+    <section class="wrapper" id="top-part">
+        <div class="overlay">
+            <header class="d-flex-r bg-white" id="header">
+                <!-- Logo -->
+                <div class="m-1" id="logo"><a href="index.html"><img src="img/logo.png"></a></div>
+                <!-- Navigation Bar Begins -->
+                <nav class="font-xs text-black mx-2" id="main-navbar">
+                    <ul class="d-flex-r">
+                        <!-- Navigation Links -->
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link drop">About</a>
+                            <!--  Level 2 Links (Use class .drop for next lecel)-->
+                            <ul>
+                                <li><a href="#">Level 2</a></li>
+                                <li><a href="#">Level 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="#" class="nav-link drop">Level 1</a>
+                            <!-- Level 2 Links -->
+                            <ul>
+                                <li><a href="#">A Level 2</a></li>
+                                <li><a href="#" class="drop">B Level 2 + Drop</a>
+                                    <!-- Level 3 Links-->
+                                    <ul>
+                                        <li><a href="#">D Level 3</a></li>
+                                        <li><a href="#">E Level 3</a></li>
+                                        <li><a href="#">F Level 3</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">C Level 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="#" class="nav-link drop">Level 1</a>
+                            <!-- Level 2 Links -->
+                            <ul>
+                                <li><a href="#">A Level 2</a></li>
+                                <li><a href="#" class="drop">B Level 2 + Drop</a>
+                                    <!-- Level 3 Links-->
+                                    <ul>
+                                        <li><a href="#">D Level 3</a></li>
+                                        <li><a href="#">E Level 3</a></li>
+                                        <li><a href="#">F Level 3</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">C Level 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
+                        <div class="d-flex-c">
+                            <a href="#" class="btn btn-pink font-xs">CLICK HERE</a>
+                        </div>
+                    </ul>
+                </nav>
+            </header>
+            <!-- Cover Image and the Banner texts -->
+            <div class="d-flex-c container text-center w-70 text-white" id="banner-text">
+                <p class="subtitle font-xs">Lorem ipsum dolor sit amet, labore et dolore magna aliqua.</p>
+                <!-- Main Heading -->
+                <h1 class="title font-x4">LOREM IPSUM SOLOR</h1>
+                <p class="subtitle font-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam sollicitudin tempor id eu nisl nunc mi ipsum. Iaculis nunc sed augue lacus viverra vitae congue eu. Id faucibus nisl tincidunt eget nullam.</p>
+                <!-- Button -->
+                <div><a href="#" class="btn btn-pink font-xs">Read More</a></div>
+            </div>
+            <!-- Three Boxes Below  the Cover Image -->
+            <div class="w-70 text-dark text-center d-flex-r" id="box">
+                <!-- Box 1 (White bg) -->
+                <div class="box-item bg-white">
+                    <i class="fas fa-coffee text-pink font-x2"></i>
+                    <h4 class="text-black font-x1">The master of kitchen.</h4>
+                    <p class="font-xs">Feugiat nisl pretium fusce id velit ut. Tristique risus nec feugiat in fermentum posuere. Fames ac turpis egestas integer eget aliquet nibh. Diam sollicitudin tempor id eu nisl nunc mi.Fermentum leo vel orci porta non pulvinar. Ipsum dolor sit amet consectetur.</p>
+                </div>
+                <!-- Box 2 (Pink bg) -->
+                <div class="box-item bg-light-pink">
+                    <i class="fas fa-clock text-pink font-x2"></i>
+                    <h4 class="text-black font-x1">A good time.</h4>
+                    <p class="font-xs">Feugiat nisl pretium fusce id velit ut. Tristique risus nec feugiat in fermentum posuere. Fames ac turpis egestas integer eget aliquet nibh. Diam sollicitudin tempor id eu nisl nunc mi.Fermentum leo vel orci porta non pulvinar. Ipsum dolor sit amet consectetur.</p>
+                </div>
+                <!-- Box 3 (White bg) -->
+                <div class="box-item bg-white">
+                    <i class="fas fa-truck-moving text-pink font-x2"></i>
+                    <h4 class="text-black font-x1">Serious Delivery.</h4>
+                    <p class="font-xs">Feugiat nisl pretium fusce id velit ut. Tristique risus nec feugiat in fermentum posuere. Fames ac turpis egestas integer eget aliquet nibh. Diam sollicitudin tempor id eu nisl nunc mi.Fermentum leo vel orci porta non pulvinar. Ipsum dolor sit amet consectetur.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Image Grid -->
+    <section class="wrapper text-dark bg-light-pink" id="image-grid">
+        <!-- Tilte -->
+        <div class="container">
+            <h2 class="heading text-black text-center font-x3">Some of our Delicacies...</h2>
+        </div>
+        <!-- Grid Begins-->
+        <div class="container-grid d-flex-c">
+            <!--First Row -->
+            <ul class="d-flex-r">
+                <li class="hover1">
+                    <img src="img/img-meal-1.jpg" alt="">
+                    <div class="overlay">
+                        <h2>Lorem Ipsum Dolor</h2>
+                    </div>
+                </li>
+                <li class="hover1">
+                    <img src="img/img-meal-2.jpg" alt="">
+                    <div class="overlay">
+                        <h2>Lorem Ipsum Dolor</h2>
+                    </div>
+                </li>
+                <li class="hover1">
+                    <img src="img/img-meal-3.jpg" alt="">
+                    <div class="overlay">
+                        <h2>Lorem Ipsum Dolor</h2>
+                    </div>
+                </li>
+            </ul>
+            <!-- Second Row -->
+            <ul class="d-flex-r">
+                <li class="hover1">
+                    <img src="img/img-meal-4.jpg" alt="">
+                    <div class="overlay">
+                        <h2>Lorem Ipsum Dolor</h2>
+                    </div>
+                </li>
+                <li class="hover1">
+                    <img src="img/img-meal-5.jpg" alt="">
+                    <div class="overlay">
+                        <h2>Lorem Ipsum Dolor</h2>
+                    </div>
+                </li>
+            </ul>
+            <!--Third Row -->
+            <ul class="d-flex-r">
+                <li class="hover1">
+                    <img src="img/img-meal-3.jpg" alt="">
+                    <div class="overlay">
+                        <h2>Lorem Ipsum Dolor</h2>
+                    </div>
+                </li>
+                <li class="hover1">
+                    <img src="img/img-meal-2.jpg" alt="">
+                    <div class="overlay">
+                        <h2>Lorem Ipsum Dolor</h2>
+                    </div>
+                </li>
+                <li class="hover1">
+                    <img src="img/img-meal-1.jpg" alt="">
+                    <div class="overlay">
+                        <h2>Lorem Ipsum Dolor</h2>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- Text section -->
+    <section class="wrapper text-dark" id="text-section">
+        <div class="d-flex-c container">
+            <!-- Title -->
+            <div class="text-center d-flex-c">
+                <h2 class="heading text-black font-x3">Get More of What You Really Want!</h2>
+                <p class="my-2">Lorem ipsum dolor sit amet</p>
+            </div>
+            <!-- This div will divide the available width into two halves -->
+            <div class="d-flex-r" id="text-section-divider">
+                <!-- First Half (Left Half -->
+                <div class="d-flex-r mx-2 w-50">
+                    <!-- First Column in First Half -->
+                    <div class="m-1" id="grid-text">
+                        <!-- 1/4 -->
+                        <div>
+                            <h6 class="heading font-x1"><a href="#">Chase the flavors.</a></h6>
+                            <p class="text-justify">Ullamcorper sit amet risus nullam eget felis. Tortor at risus viverra adipiscing. Risus ultricies tristique nulla aliquet&hellip;</p>
+                        </div>
+                        <!-- 2/4 -->
+                        <div>
+                            <h6 class="heading font-x1"><a href="#">Chefs for passion.</a></h6>
+                            <p class="text-justify">Ullamcorper sit amet risus nullam eget felis. Tortor at risus viverra adipiscing. Risus ultricies tristique nulla aliquet&hellip;</p>
+                        </div>
+                    </div>
+                    <!-- Second Column in First Half -->
+                    <div class="m-1" id="grid-text">
+                        <!-- 3/4 -->
+                        <div>
+                            <h6 class="heading font-x1"><a href="#">Falvor explosion.</a></h6>
+                            <p class="text-justify">Ullamcorper sit amet risus nullam eget felis. Tortor at risus viverra adipiscing.Risus ultricies tristique nulla aliquet&hellip;</p>
+                        </div>
+                        <!-- 4/4 -->
+                        <div>
+                            <h6 class="heading font-x1"><a href="#">Food at first sight.</a></h6>
+                            <p class="text-justify">Ullamcorper sit amet risus nullam eget felis. Tortor at risus viverra adipiscing.Risus ultricies tristique nulla aliquet&hellip;</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Second Half (Right Half -->
+                <div class="w-50">
+                    <p class="my-1 font-xs">Have it your way.</p>
+                    <h6 class="my-1 heading">Lorem Ipsum Dolor.</h6>
+                    <p class="my-1 text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque elit ullamcorper dignissim cras tincidunt. Aliquet lectus proin nibh nisl condimentum id venenatis. </p>
+                    <p class="my-1 text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque elit ullamcorper dignissim cras tincidunt. Aliquet lectus proin nibh nisl condimentum id venenatis&hellip; </p>
+                    <div class="text-left"><a href="#" class="btn btn-pink">Read More</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 2x2 Image-Text Grid -->
+    <section class="wrapper bg-light-pink" id="features-grid">
+        <div class="features-grid-container">
+            <!-- Title -->
+            <div class="container d-flex-r text-center">
+                <h2 class="title title-black font-x3">You will enjoy our restaurant!</h2>
+            </div>
+            <!-- First Row (Image -> Text) -->
+            <div class="d-flex-r features-grid-row" id="first-row">
+                <!-- First Half for Image -->
+                <div class="features-grid-row-img w-50">
+                    <img src="img/bg-img-2.jpg">
+                </div>
+                <!-- Second Half for text -->
+                <div class="features-grid-row-text w-50">
+                    <div class="m-3">
+                        <h2 class="text-pink font-x2">Homely Atmosphere</h2>
+                        <div>
+                            <p class="text-dark text-justify font-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque elit ullamcorper dignissim cras tincidunt.</p>
+                        </div>
+                        <div><a href="#" class="btn btn-pink">View More</a></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Second Row (Text -> Image) -->
+            <div class="d-flex-r features-grid-row" id="second-row">
+                <!-- Second Half for Image -->
+                <div class="features-grid-row-img w-50">
+                    <img src="img/bg-img-3.jpg">
+                </div>
+                <!-- First Half for text -->
+                <div class="features-grid-row-text w-50">
+                    <div class="m-3">
+                        <h2 class="text-pink font-x2">Excellent Service </h2>
+                        <div>
+                            <p class="text-dark text-justify font-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque elit ullamcorper dignissim cras tincidunt.</p>
+                        </div>
+                        <div><a href="#" class="btn btn-pink">View More</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Parallax Image -->
+    <section class="wrapper" id="parallax-image">
+        <article class="d-flex-c container text-center">
+            <div class="my-2">
+                <h6 class="heading font-x3">2. We are proud of us.</h6>
+                <p>Lorem Ipsum dolor sit amet</p>
+            </div>
+            <div><a href="#" class="btn btn-pink">Get in Contact&raquo;</a></div>
+        </article>
+    </section>
+    <!-- Our Blog Panels -->
+    <section class="wrapper text-dark" id="our-blog">
+        <div class="d-flex-c container">
+            <!-- Title -->
+            <div class="text-center">
+                <h2 class="heading font-x3 text-black">3. Latest from our Blog</h2>
+                <p>Lorem Ipsum dolor sit amet</p>
+            </div>
+            <!-- Panles begin -->
+            <div class="d-flex-r" id="our-blog-panel">
+                <!-- First Panel -->
+                <article class="hover2 m-2">
+                    <figure><a href="#"><img src="img/blog-1.jpg" alt=""></a></figure>
+                    <h3 class="m-2 text-center heading font-x1">Like Mom's house</h3>
+                    <ul class="m-1 meta">
+                        <li><i class="fa "></i><a href="#">Coffee</a></li>
+                        <li><i class="fa "></i><a href="#">Travel</a></li>
+                    </ul>
+                    <p class="m-2 text-justify font-xs">Aliquet enim tortor at auctor. Neque sodales ut etiam sit amet Etiam sit amet nisl purus in. Ipsum suspendisse ultrices gravida dictum fusceEtiam tempor&hellip;</p>
+                    <div class="m-1 text-center"><a href="#" class="btn btn-pink">Full Story&raquo;</a></div>
+                </article>
+                <!-- Second Panel -->
+                <article class="hover2 m-2">
+                    <figure><a href="#"><img src="img/blog-2.jpg" alt=""></a></figure>
+                    <h3 class="m-2 text-center heading font-x1">Listen to your palate.</h3>
+                    <ul class="m-1 meta">
+                        <li><i class="fa "></i><a href="#">Staff</a></li>
+                        <li><i class="fa "></i><a href="#">Hospitality</a></li>
+                    </ul>
+                    <p class="m-2 text-justify font-xs">Aliquet enim tortor at auctor. Neque sodales ut etiam sit amet Etiam sit amet nisl purus in. Ipsum suspendisse ultrices gravida dictum fusceEtiam tempor&hellip;</p>
+                    <div class="m-1 text-center"><a href="#" class="btn btn-pink">Full Story&raquo;</a></div>
+                </article>
+                <!-- Third Panel -->
+                <article class="hover2 m-2">
+                    <figure><a href="#"><img src="img/blog-3.jpg" alt=""></a></figure>
+                    <h3 class="m-2 text-center heading font-x1">Love Bacon? Marry It.</h3>
+                    <ul class="m-1 meta">
+                        <li><i class="fa "></i><a href="#">User</a></li>
+                        <li><i class="fa "></i><a href="#">Travel</a></li>
+                    </ul>
+                    <p class="m-2 text-justify font-xs">Aliquet enim tortor at auctor. Neque sodales ut etiam sit amet Etiam sit amet nisl purus in. Ipsum suspendisse ultrices gravida dictum fusceEtiam tempor&hellip;</p>
+                    <div class="m-1 text-center"><a href="#" class="btn btn-pink">Full Story&raquo;</a></div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- Text Grid with Parallax Image -->
+    <section class="wrapper" id="parallax-text-grid">
+        <div class="overlay p-3">
+            <div class="d-flex-r" id="parallax-text-grid-divider">
+                <!-- First half (left) with 40% width of the container -->
+                <div class="w-40 d-flex-c: text-left text-white">
+                    <h4 class="subtitle font-x1">And that's not all...</h4>
+                    <h2 class="font-x3">4 Reasons to visit us</h2>
+                    <p class="font-xs">Massa id neque aliquam vestibulum morbi blandit cursus risus at. Odio tempor orci dapibus ultrices in iaculis. Nisi lacus sed viverra tellus in hac habitasse platea dictumst.</p>
+                    <div class="font-xs"><a href="#" class="text-pink">Visit Us</a></div>
+                </div>
+                <!-- Second half (right) with 60% width of the container -->
+                <div class="w-60 d-flex-c" id="right-half">
+                    <!-- First row -->
+                    <div class="d-flex-r font-xs">
+                        <!-- Card 1/4 -->
+                        <div class="card p-2">
+                            <div class="title">
+                                <span class="num text-bold">01.</span>
+                                <h4 class="card-title m-0 text-bold">OUR TEAM</h4>
+                            </div>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque elit ullamcorper dignissim cras tincidunt.</p>
+                            <div><a href="#" class="text-pink">Learn More...</a></div>
+                        </div>
+                        <!-- Card 2/4 -->
+                        <div class="card p-2">
+                            <div class="title">
+                                <span class="num text-bold">02.</span>
+                                <h4 class="card-title m-0 text-bold">OUR FOOD</h4>
+                            </div>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque elit ullamcorper dignissim cras tincidunt.</p>
+                            <div><a href="#" class="text-pink">Learn More...</a></div>
+                        </div>
+                    </div>
+                    <!-- Second row -->
+                    <div class="d-flex-r font-xs">
+                        <!-- Card 3/4 -->
+                        <div class="card p-2">
+                            <div class="title">
+                                <span class="num text-bold">03.</span>
+                                <h4 class="card-title m-0 text-bold">OUR MOTO</h4>
+                            </div>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque elit ullamcorper dignissim cras tincidunt.</p>
+                            <div><a href="#" class="text-pink">Learn More...</a></div>
+                        </div>
+                        <!-- Card 4/4 -->
+                        <div class="card p-2">
+                            <div class="title">
+                                <span class="num text-bold">04.</span>
+                                <h4 class="card-title m-0 text-bold">OUR HOSPITALITY</h4>
+                            </div>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque elit ullamcorper dignissim cras tincidunt.</p>
+                            <div><a href="#" class="text-pink">Learn More...</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Our team Cards or Panels -->
+    <section class="wrapper text-dark" id="our-team">
+        <div class="container">
+            <!-- Title -->
+            <h2 class="heading text-center font-x3 text-black">4. Meet our team</h2>
+            <h3 class="text-center my-3 font-x1">We make the world's best coffee.</h3>
+            <!-- Cards Begin -->
+            <div class="d-flex-r w-70" id="our-team-card">
+                <!-- First Cards -->
+                <div class="d-flex-c card-wrap w-30">
+                    <div class="image-wrap">
+                        <img src="img/face1.png">
+                        <div class="social-media text-center">
+                            <ul class="nospace">
+                                <li><a href="#"><span class="icon-font fab fa-facebook"></span></a></li>
+                                <li><a href="#"><span class="icon-font fab fa-twitter"></span></a></li>
+                                <li><a href="#"><span class="icon-font fab fa-instagram"></span></a></li>
+                            </ul>
+                        </div>
+                        <div class="img-overlay"></div>
+                    </div>
+                    <h4 class="text-left text-bold text-black font-xs">AAA</h4>
+                    <h5 class="text-left text-black font-xs nospace">Barista</h5>
+                    <p class="text-left font-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <!-- Second Cards -->
+                <div class="d-flex-c card-wrap w-30">
+                    <div class="image-wrap">
+                        <img src="img/face2.png">
+                        <div class="social-media text-center">
+                            <ul class="nospace">
+                                <li><a href="#"><span class="icon-font fab fa-facebook"></span></a></li>
+                                <li><a href="#"><span class="icon-font fab fa-twitter"></span></a></li>
+                                <li><a href="#"><span class="icon-font fab fa-instagram"></span></a></li>
+                            </ul>
+                        </div>
+                        <div class="img-overlay"></div>
+                    </div>
+                    <h4 class="text-left text-bold text-black font-xs">BBB</h4>
+                    <h5 class="text-left text-black font-xs nospace">Musician</h5>
+                    <p class="text-left font-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <!-- Third Cards -->
+                <div class="d-flex-c card-wrap w-30">
+                    <div class="image-wrap">
+                        <img src="img/face3.png">
+                        <div class="social-media text-center">
+                            <ul class="nospace">
+                                <li><a href="#"><span class="icon-font fab fa-facebook"></span></a></li>
+                                <li><a href="#"><span class="icon-font fab fa-twitter"></span></a></li>
+                                <li><a href="#"><span class="icon-font fab fa-instagram"></span></a></li>
+                            </ul>
+                        </div>
+                        <div class="img-overlay"></div>
+                    </div>
+                    <h4 class="text-left text-bold text-black font-xs">CCC</h4>
+                    <h5 class="text-left text-black font-xs nospace">Cook</h5>
+                    <p class="text-left font-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Main Footer -->
+    <footer class="wrapper" id="main-footer">
+        <!-- Social Icons -->
+        <div class="container" id="social-icons">
+            <div class="text-center">
+                <!-- Title -->
+                <h3 class="font-x1 text-dark">Welcome to Our Restaurant</h3>
+                <h2 class="text-black font-x3">Do you like it? Share this page!</h2>
+                <!-- Icons -->
+                <div class="text-white">
+                    <span class="btn btn-social socicon-bg-facebook mx-2"><i class="fab fa-facebook"></i></span>
+                    <span class="btn btn-social socicon-bg-twitter mx-2"><i class="fab fa-twitter"></i></span>
+                    <span class="btn btn-social socicon-bg-youtube mx-2"><i class="fab fa-youtube"></i></span>
+                    <span class="btn btn-social socicon-bg-instagram mx-2"><i class="fab fa-instagram"></i></span>
+                    <span class="btn btn-social socicon-bg-linkedin mx-2"><i class="fab fa-linkedin"></i></span>
+                    <span class="btn btn-social socicon-bg-pinterest mx-2"><i class="fab fa-pinterest"></i></span>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Content -->
+        <div class="p-4 bg-light-pink">
+            <div class="d-flex-r text-black" id="main-footer-divider">
+                <!-- Contact Address -->
+                <div class="d-flex-c w-30 contact-address">
+                    <!-- Footer Image -->
+                    <div class="text-center">
+                        <a href="index.html"><img src="img/img-footer.jpg" style="height: 5rem;"></a>
+                    </div>
+                    <!-- Address -->
+                    <div class="address">
+                        <h3 class="address-title text-bold text-center">Address</h3>
+                        <p class="address-block text-center">
+                            XYZ Street Name <br>Lien Chieu (DaNang City), VietNam
+                        </p>
+                    </div>
+                    <!-- Contact Details -->
+                    <div class="contacts text-center">
+                        <h3 class="contacts-title text-bold">Contacts</h3>
+                        <p class="contact-block">
+                            Email: <a href="mailto:ntt.it@gmail.com" class="text-black text-bold">ntt.it@gmail.com</a> <br>
+                            Phone: +99 000 000 0000 <br>
+                            Fax: +99 000 000 0000
+                        </p>
+                    </div>
+                </div>
+                <!-- Opening Hours -->
+                <div class="d-flex-c w-30 opening-hours:text-center">
+                    <h3 class="opening-hours-title text-bold">OPENING HOURS</h3>
+                    <div class="d-flex-r m-0">
+                        <!-- Left Column -->
+                        <div class="d-flex-c text-bold text-right w-45">
+                            <span>Monday</span>
+                            <span>Tuesday</span>
+                            <span>Wednesday</span>
+                            <span>Thursday</span>
+                            <span>Friday</span>
+                            <span>Saturday</span>
+                        </div>
+                        <!-- Right Column -->
+                        <div class="d-flex-c text-left w-45">
+                            <span>10:00 - 18:00</span>
+                            <span>10:00 - 18:00</span>
+                            <span>10:00 - 18:00</span>
+                            <span>10:00 - 18:00</span>
+                            <span>10:00 - 18:00</span>
+                            <span>10:00 - 18:00</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Get in Touch -->
+                <div class="d-flex-c w-30 get-in-touch">
+                    <h3 class="text-center text-bold">GET IN TOUCH</h3>
+                    <form>
+                        <div class="my-1"><input type="text" name="name" class="field" placeholder="Name"></div>
+                        <div class="my-1"><input type="text" name="contact" class="field" placeholder="Contact"></div>
+                        <div class="form-group my-2">
+                            <textarea type="text" class="form-control" placeholder="Message" name="message" rows="2"></textarea>
+                        </div>
+                        <div class="text-center"><a href="#" class="btn btn-pink">Send</a></div>
+                    </form>
+                </div>
+            </div>
+            <p class="copyright text-black">Copyright &copy; tech.IT 2019 - All Rights Reserved</p>
+            <a href="#myPage" id="backtotop"><i class="fa fa-chevron-up"></i></a>
+        </div>
+    </footer>
+</body>
+
+</html>
